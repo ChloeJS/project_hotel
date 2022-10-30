@@ -195,22 +195,22 @@
 	                            	<select name='state_code' id="selectbox_state" onchange="optionChange()">
 										<option value='1' label='시 / 도' selected></option>
 										<option value='11' label='서울특별시'></option>
-										<option value='12' label='부산광역시'></option>
-										<option value='13' label='대구광역시'></option>
-										<option value='14' label='인천광역시'></option>
-										<option value='15' label='광주광역시'></option>
-										<option value='16' label='대전광역시'></option>
-										<option value='17' label='울산광역시'></option>
-										<option value='18' label='세종특별자치시'></option>
-										<option value='19' label='경기도'></option>
-										<option value='20' label='강원도'></option>
-										<option value='21' label='충청북도'></option>
-										<option value='22' label='충청남도'></option>
-										<option value='23' label='전라북도'></option>
-										<option value='24' label='전라남도'></option>
-										<option value='25' label='경상북도'></option>
-										<option value='26' label='경상남도'></option>
-										<option value='27' label='제주특별자치도'></option>
+										<option value='21' label='부산광역시'></option>
+										<option value='22' label='대구광역시'></option>
+										<option value='23' label='인천광역시'></option>
+										<option value='24' label='광주광역시'></option>
+										<option value='25' label='대전광역시'></option>
+										<option value='26' label='울산광역시'></option>
+										<option value='29' label='세종특별자치시'></option>
+										<option value='31' label='경기도'></option>
+										<option value='32' label='강원도'></option>
+										<option value='33' label='충청북도'></option>
+										<option value='34' label='충청남도'></option>
+										<option value='35' label='전라북도'></option>
+										<option value='36' label='전라남도'></option>
+										<option value='37' label='경상북도'></option>
+										<option value='38' label='경상남도'></option>
+										<option value='39' label='제주특별자치도'></option>
 									</select>
 									
 									<select name='district_code' id="selectbox_district">
