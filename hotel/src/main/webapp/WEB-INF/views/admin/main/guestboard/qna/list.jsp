@@ -173,7 +173,7 @@
  <div id="container">
 			<div id="content">
 				<div class="con_tit">
-					<h2>게스트 관리 ▶ Q&A ▶ 목록조회 ${data.startPage }</h2>
+					<h2>게스트 관리 ▶ Q&A ▶ 목록조회</h2>
 				</div>
 			</div>
 	</div>
