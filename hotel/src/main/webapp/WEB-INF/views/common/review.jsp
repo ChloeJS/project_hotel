@@ -101,7 +101,7 @@
 				
 					<div class="col-md-8">
 						<div class="card-body">
-							<h5 class="card-title" onclick="location.href='/hotel/main/hotelView.do?hotel_no=${rv.hotel_no}'" > 
+							<h5 class="card-title" onclick="location.href='/hotel/main/roomView.do?hotel_no=${rv.hotel_no}&room_no=${rv.room_no }'" > 
 								${rv.review_title }
 							</h5>
 							
