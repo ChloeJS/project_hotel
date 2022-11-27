@@ -94,6 +94,7 @@ public class CouponController {
 		}
 	}
 	
+	
 	//쿠폰 발급내역
 	@GetMapping("/admin/main/coupon/couponhistory.do")
 	public String couponhistory(Model model, CouponVO vo) {

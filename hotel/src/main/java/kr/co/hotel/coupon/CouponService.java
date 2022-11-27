@@ -20,6 +20,7 @@ public interface CouponService {
 	//쿠폰 생성
 	public int createCoupon(CouponVO vo);
 	
+	
 	//쿠폰 페이징
 	public Map couponpaging(CouponVO vo);
 	

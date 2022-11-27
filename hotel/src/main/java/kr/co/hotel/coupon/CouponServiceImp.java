@@ -22,6 +22,7 @@ public class CouponServiceImp implements CouponService {
 		return mapper.list(map);
 	}
 
+	
 	//특정 게스트 정보 출력
 	@Override
 	public GuestVO selectGuestNo(String guest_id) {

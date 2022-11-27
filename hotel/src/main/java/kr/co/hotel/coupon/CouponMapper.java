@@ -19,6 +19,7 @@ public interface CouponMapper {
 	//쿠폰 번호 중복 체크
 	public int couponNodup(CouponVO vo);
 	
+	
 	//쿠폰 생성
 	public int createCoupon(CouponVO vo);
 	
