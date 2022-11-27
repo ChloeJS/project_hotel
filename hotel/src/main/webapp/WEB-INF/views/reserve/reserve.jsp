@@ -148,7 +148,7 @@ function reserve(){
 			buyer_email: "${loginInfo.guest_email}",//로그인 세션에 저장되어있는 이메일
 			buyer_name: "${loginInfo.guest_name}",//로그인 세션에 저장되어있는 이름
 			buyer_tel: "${loginInfo.guest_hp}",//로그인 세션에 저장되어있는 전화번호
-			buyer_addr: "${loginInfo.guest_addr1}",//로그인 세션에 저장되어있는 주소
+			buyer_addr: "${loginInfo.guest_addr1}"//로그인 세션에 저장되어있는 주소
 			},function (rsp) { 
 				console.log(rsp)
 						   if (rsp.success) {

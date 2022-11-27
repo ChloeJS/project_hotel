@@ -19,12 +19,16 @@ public interface CouponMapper {
 	//쿠폰 번호 중복 체크
 	public int couponNodup(CouponVO vo);
 	
+	
 	//쿠폰 생성
 	public int createCoupon(CouponVO vo);
 	
 	//쿠폰 발급 리스트
-	public int counthistory();
+	public int counthistory(CouponVO vo);
 	public List<CouponVO> couponpaging(CouponVO vo);
+	
+	//쿠폰 발급 취소
+	public int couponcancel(CouponVO vo);
 	
 	//---이하 빛찬-----------------------------------
 	public int count (CouponVO vo);

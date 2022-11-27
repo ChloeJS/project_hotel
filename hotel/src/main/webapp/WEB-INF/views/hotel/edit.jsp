@@ -156,22 +156,22 @@
 	                            	<select name='state_code' id="selectbox_state" onchange="optionChange()">
 										<option value='1'  label='시 / 도' selected></option>
 										<option value='11' <c:if test="${data.state_code ==11 }">selected</c:if> label='서울특별시'></option>
-										<option value='12' <c:if test="${data.state_code ==12 }">selected</c:if> label='부산광역시'></option>
-										<option value='13' <c:if test="${data.state_code ==13 }">selected</c:if> label='대구광역시'></option>
-										<option value='14' <c:if test="${data.state_code ==14 }">selected</c:if> label='인천광역시'></option>
-										<option value='15' <c:if test="${data.state_code ==15 }">selected</c:if> label='광주광역시'></option>
-										<option value='16' <c:if test="${data.state_code ==16 }">selected</c:if> label='대전광역시'></option>
-										<option value='17' <c:if test="${data.state_code ==17 }">selected</c:if> label='울산광역시'></option>
-										<option value='18' <c:if test="${data.state_code ==18 }">selected</c:if> label='세종특별자치시'></option>
-										<option value='19' <c:if test="${data.state_code ==19 }">selected</c:if> label='경기도'></option>
-										<option value='20' <c:if test="${data.state_code ==20 }">selected</c:if> label='강원도'></option>
-										<option value='21' <c:if test="${data.state_code ==21 }">selected</c:if> label='충청북도'></option>
-										<option value='22' <c:if test="${data.state_code ==22 }">selected</c:if> label='충청남도'></option>
-										<option value='23' <c:if test="${data.state_code ==23 }">selected</c:if> label='전라북도'></option>
-										<option value='24' <c:if test="${data.state_code ==24 }">selected</c:if> label='전라남도'></option>
-										<option value='25' <c:if test="${data.state_code ==25 }">selected</c:if>  label='경상북도'></option>
-										<option value='26' <c:if test="${data.state_code ==26 }">selected</c:if> label='경상남도'></option>
-										<option value='27' <c:if test="${data.state_code ==27 }">selected</c:if> label='제주특별자치도'></option>
+										<option value='12' <c:if test="${data.state_code ==21 }">selected</c:if> label='부산광역시'></option>
+										<option value='13' <c:if test="${data.state_code ==22 }">selected</c:if> label='대구광역시'></option>
+										<option value='14' <c:if test="${data.state_code ==23 }">selected</c:if> label='인천광역시'></option>
+										<option value='15' <c:if test="${data.state_code ==24 }">selected</c:if> label='광주광역시'></option>
+										<option value='16' <c:if test="${data.state_code ==25 }">selected</c:if> label='대전광역시'></option>
+										<option value='17' <c:if test="${data.state_code ==26 }">selected</c:if> label='울산광역시'></option>
+										<option value='18' <c:if test="${data.state_code ==29 }">selected</c:if> label='세종특별자치시'></option>
+										<option value='19' <c:if test="${data.state_code ==31 }">selected</c:if> label='경기도'></option>
+										<option value='20' <c:if test="${data.state_code ==32 }">selected</c:if> label='강원도'></option>
+										<option value='21' <c:if test="${data.state_code ==33 }">selected</c:if> label='충청북도'></option>
+										<option value='22' <c:if test="${data.state_code ==34 }">selected</c:if> label='충청남도'></option>
+										<option value='23' <c:if test="${data.state_code ==35 }">selected</c:if> label='전라북도'></option>
+										<option value='24' <c:if test="${data.state_code ==36 }">selected</c:if> label='전라남도'></option>
+										<option value='25' <c:if test="${data.state_code ==37 }">selected</c:if>  label='경상북도'></option>
+										<option value='26' <c:if test="${data.state_code ==38 }">selected</c:if> label='경상남도'></option>
+										<option value='27' <c:if test="${data.state_code ==39 }">selected</c:if> label='제주특별자치도'></option>
 									</select>
 									
 									<select name='district_code' id="selectbox_district">

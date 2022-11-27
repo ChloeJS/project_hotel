@@ -141,6 +141,8 @@ public class HostController {
 		}
 		return "common/return";
 	}
+	
+	
 	@GetMapping("/host/mypage.do")
 	public String mypage(HttpSession sess, Model model, HostNoticeVO vo, HostBoardVO hvo) {
 		if(sess.getAttribute("loginInfo2")==null) {
@@ -151,12 +153,10 @@ public class HostController {
 			//해당 호텔의 가용객실 총 수
 			HostVO host_loginInfo =(HostVO)sess.getAttribute("loginInfo2");
 			int host_no = host_loginInfo.getHost_no();
-			System.out.println(host_loginInfo.getHotel_no()+"=====================");
-			System.out.println(host_loginInfo.getHost_no()+"=======호스트no확인=============");
 			
 			int r =service.room_count(host_no);
 			model.addAttribute("room_count", service.room_count(host_no));
-			System.out.println("==============hotel_no======="+ host_loginInfo.getHotel_no());
+			
 			Map map = hservice.get_numbers(host_loginInfo);
 			model.addAttribute("map", map);
 			//공지사항
@@ -166,10 +166,13 @@ public class HostController {
 			hvo.setHost_no(host_no);
 			Map map3 = hbservice.index_in_mypage(hvo);
 			model.addAttribute("map3", map3);
-			//END_빛찬_220824
+			
 			return "/host/myPage";
+			//END_빛찬_220824
 		}
 	}
+	
+	
 	@GetMapping("/host/myinfo.do")
 	public String myinfo(HttpSession sess, Model model) {
 		if(sess.getAttribute("loginInfo2")==null) {

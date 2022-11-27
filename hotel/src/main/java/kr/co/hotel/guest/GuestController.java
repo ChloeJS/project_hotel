@@ -138,6 +138,7 @@ public class GuestController {
 			return "/guest/myPage";//myPage는 포인트, 예약내역등을 볼수 있는 곳, 이페이지에서 '내정보관리'로 넘어갈수 있음
 		}
 	}
+	
 	@GetMapping("/guest/myinfo.do")
 	public String myinfo(HttpSession sess, Model model) {
 		if(sess.getAttribute("loginInfo") == null) {
@@ -148,6 +149,7 @@ public class GuestController {
 			//로그인이 되어 있어야 myinfoLogin.jsp로 넘어갈수 있음
 		}
 	}
+	
 	@PostMapping("/guest/myinfoLogin.do")
 	public void myinfoLogin(GuestVO gvo, HttpServletResponse res, HttpSession sess) throws IOException {
 		GuestVO myinfo=(GuestVO)sess.getAttribute("loginInfo");

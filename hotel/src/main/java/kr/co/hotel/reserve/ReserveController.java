@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -59,17 +60,10 @@ public class ReserveController {
 	}
 	
 	
-	//쿠폰 삭제 스케줄러(만료시)
-	//@Scheduled(cron="0/10 * * * * *")
+	//쿠폰 삭제 및 미입금 사용자 취소 스케줄러(만료시)
+	//@Scheduled(cron = "0/10 * * * * *")
 	public void Coupon_PayDelete() {
 		service.CouponDelete();
-		/*
-		 * 1. 리스트를 가져와서 반복문으로 해당하는 것들을 돌려야함.(ok)
-		 * 2. 리스트에서 가져온 vo.get~~으로 메서드 실행
-		 * 3. 실행 메서드는 게스트에 포인트 돌려주기
-		 * 4. 포인트 테이블에 적립하기
-		 * 5. 쿠폰 상태 바꾸기
-		 */
 		List<ReserveVO> list = service.CancleList();
 		for(int i=0; i<list.size();i++) {
 			ReserveVO vo = list.get(i);

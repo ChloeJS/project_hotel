@@ -20,8 +20,6 @@ public class ImgHandling {
 	
 	public static Map imghandle( MultipartFile filename, HttpServletRequest req) {
 	
-
-		
 		//파일명 구하기
 		String org= filename.getOriginalFilename();//사용자가 첨부한 원본 파일명을 가져옴
 		String ext = org.substring(org.lastIndexOf("."));//확장자
@@ -37,13 +35,10 @@ public class ImgHandling {
 			System.out.println("ImgHandle 업로드 중 예외 발생");
 		}
 		
-		
-		
 		Map map = new HashMap();
 		
 		map.put("filename_org", org);
 		map.put("filename_real", real);
-		
 		
 		return map;
 	}
