@@ -53,7 +53,7 @@ th {
 
 
 	// 카카오톡 공유 api 
-		Kakao.init('7316461b564393db0543f1e130e426e9'); // 앱 키
+	Kakao.init('7316461b564393db0543f1e130e426e9'); // 앱 키
 	$(function shareKakao() {
 		Kakao.Share.createDefaultButton({
 					container : '#btnKakao',

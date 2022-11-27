@@ -123,7 +123,8 @@
 					</c:if>
 					<!-- 페이지별 -->
 						<c:forEach var="p" begin="${data.startPage}" end="${data.endPage }">
-							<li><a href='list.do?page=${p }' <c:if test="${guestBoardVO.page == p }"> class='current'</c:if>>${p }</a></li>
+							<li><a href='list.do?page=${p }' 
+							<c:if test="${guestBoardVO.page == p }"> class='current'</c:if>>${p }</a></li>
 						</c:forEach>
 					<!-- 다음페이지 -->
 					<c:if test="${data.next == true }">

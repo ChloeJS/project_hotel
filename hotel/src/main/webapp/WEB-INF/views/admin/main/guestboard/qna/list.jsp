@@ -75,11 +75,11 @@
 					
 					// 이전페이지
 					if (jsonInfo.prev == true){
-						pageHtml += '<li><a href="javascript:select('+(jsonInfo.startPage-1)+')"> </a> </li>' 
+						pageHtml += '<li><a href="javascript:select('+(jsonInfo.startPage-1)+')"> < </a> </li>' 
 					}
 					
 					// 페이지별
-					for (var i = 1; i<=jsonInfo.totalPage ; i++){
+					for (var i = jsonInfo.startPage; i<=jsonInfo.endPage ; i++){
 						pageHtml += '<li><a href="javascript:select('+i+')"'
 						if (jsonInfo.page == i){
 							pageHtml += " class='current'"
@@ -89,7 +89,7 @@
 					
 					// 다음 페이지
 					if (jsonInfo.next == true){
-						pageHtml += '<li><a href="javascript:select('+(jsonInfo.endPage+1)+')"> </a> </li> </ul> </div>' 
+						pageHtml += '<li><a href="javascript:select('+(jsonInfo.endPage+1)+')"> > </a> </li> </ul> </div>' 
 					}
 				
 				// 목록
@@ -173,7 +173,7 @@
  <div id="container">
 			<div id="content">
 				<div class="con_tit">
-					<h2>게스트 관리 ▶ Q&A ▶ 목록조회</h2>
+					<h2>게스트 관리 ▶ Q&A ▶ 목록조회 ${data.startPage }</h2>
 				</div>
 			</div>
 	</div>
@@ -300,11 +300,12 @@
 					</c:if>
 					<!-- 페이지별 -->
 						<c:forEach var="p" begin="${data.startPage}" end="${data.endPage }">
-							<li><a href='list.do?page=${p }&stype=${param.stype}&sword=${param.sword}' <c:if test="${guestBoardVO.page == p }"> class='current'</c:if>>${p }</a></li> 
+							<li><a href='list.do?page=${p }&stype=${param.stype}&sword=${param.sword}' 
+							<c:if test="${guestBoardVO.page == p }"> class='current'</c:if>>${p }</a></li> 
 						</c:forEach>
 					<!-- 다음페이지 -->
 					<c:if test="${data.next == true }">
-						<li><a href="list.do?page=${data.endPage + 1 }&stype=${param.stype}&sword=${param.sword}">></a></li>
+						<li><a href="list.do?page=${data.endPage + 1 }&stype=${param.stype}&sword=${param.sword}"> > </a></li>
 					</c:if>
 					</ul>
 				</div>

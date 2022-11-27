@@ -79,11 +79,10 @@ public class ReserveController {
 				service.UpdateGuestPoint(vo);
 				service.InsertPointTable(vo);
 			}
-			if(vo.getCoupon_no() !="") {
+			if (vo.getCoupon_no() !="") {
 				service.UpdateCouponStatus(vo);
 			}	
 		}
-	
     }
 	
 	//무통장입금 확인페이지

@@ -48,6 +48,10 @@ public class Admin_GuestBoardController extends ImgHandling {
 		resObj.setTotalCount((int) map.get("totalCount"));
 		resObj.setTotalPage((int) map.get("totalPage"));
 		resObj.setPage(vo.getPage());
+		resObj.setStartPage((int)map.get("startPage"));
+		resObj.setEndPage((int)map.get("endPage"));
+		resObj.setPrev((boolean)map.get("prev"));
+		resObj.setNext((boolean)map.get("next"));
 		resObj.setObjList(service.adminList(vo));
 		System.out.println("=============================" + resObj);
 		return resObj;
