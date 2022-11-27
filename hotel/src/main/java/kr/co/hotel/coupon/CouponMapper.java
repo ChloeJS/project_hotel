@@ -23,8 +23,11 @@ public interface CouponMapper {
 	public int createCoupon(CouponVO vo);
 	
 	//쿠폰 발급 리스트
-	public int counthistory();
+	public int counthistory(CouponVO vo);
 	public List<CouponVO> couponpaging(CouponVO vo);
+	
+	//쿠폰 발급 취소
+	public int couponcancel(CouponVO vo);
 	
 	//---이하 빛찬-----------------------------------
 	public int count (CouponVO vo);

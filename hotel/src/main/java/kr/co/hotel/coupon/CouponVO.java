@@ -27,7 +27,8 @@ public class CouponVO {
 	private Timestamp searchEndDate; 
 	
 	
-	
+	private String stype;
+	private String sword;
 	
 	
 	 public CouponVO() { 

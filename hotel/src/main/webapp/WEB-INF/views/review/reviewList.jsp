@@ -56,6 +56,7 @@
 		},function(){
 			var review_no = $(this).data('review_no');
 			var target = "#outer-div-modi"+review_no+" .score img";
+			
 			for(var i=0; i<$(target).length;i++){
 				if(i < $("#outer-div-modi"+review_no+" input[name=review_score]").val()){
 					$(target).eq(i).attr("src","/hotel/image/mypage/star_icon.png")	

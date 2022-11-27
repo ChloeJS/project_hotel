@@ -78,14 +78,10 @@
 	   	 }
  });
 	 $('#enddate').datepicker('setDate', 'today+1');
-	 $('#enddate').val().replace("-","");
-		   	 //console.log(typeof((Number)($('#enddate').val().replace(/-/g,""))));
-		   	 //var startdate=(Number)($('#startdate').val().replace(/-/g,""));
-		   	 //var enddate=(Number)($('#enddate').val().replace(/-/g,""));
-			reservecheck();
-		});
+	 reservecheck();
+});
 
-//페이지 이동시 중복체크
+	//날짜 중복체크
 	function reservecheck(){
 		 $.ajax({
 			url : "/hotel/reserve/reservecheck.do",
@@ -97,12 +93,6 @@
 				enddate : $('#enddate').val()
 			}
 		 }).done(function (res){
-	   	 	 //console.log(startdate);
-	   	 	 //console.log(enddate);
-	   	 	 //console.log(enddate-startdate);
-	   	 	 
-	   	 	 console.log($("#startdate").val());
-		   	 console.log($("#enddate").val());
 			 var startdate=new Date($("#startdate").val().split('-'));
 			 var enddate=new Date($("#enddate").val().split('-'));
 			 var dif = enddate-startdate;
