@@ -13,7 +13,7 @@
     <meta name="description" content="">
     <title>회원가입</title>
     
-   <link rel="stylesheet" href="/hotel/css/reset.css"/>
+    <link rel="stylesheet" href="/hotel/css/reset.css"/>
     <link rel="stylesheet" href="/hotel/css/contents.css"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 

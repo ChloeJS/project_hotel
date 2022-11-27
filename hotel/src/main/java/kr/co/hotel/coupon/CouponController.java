@@ -67,24 +67,33 @@ public class CouponController {
 		return "/admin/main/coupon/idList";
 	}
 	
-	//쿠폰 생성
+	//쿠폰 수량
 	@PostMapping("coupon/create.do")
 	public String createpro(GuestVO gvo, CouponVO cvo, 
 			@RequestParam List<String> guest_id, 
 			@RequestParam List<Integer>coupon_price,
-			@RequestParam List<Integer>amount) {
+			@RequestParam List<Integer>amount, Model model) {
 		
+		int result=0;
 		for(String id : guest_id) {
 			for(int i=0; i<coupon_price.size(); i++) {
 				for(int j=0; j<amount.get(i); j++) {
 					cvo.setGuest_id((service.selectGuestNo(id)).getGuest_id());//1
 					cvo.setCoupon_price(coupon_price.get(i));
-					service.createCoupon(cvo);
+					result = service.createCoupon(cvo);
 				}
 			}
 		}
+		if(result ==1) {
+			model.addAttribute("msg", "쿠폰이 생성되었습니다.");
+			model.addAttribute("url", "/hotel/admin/main/coupon/couponcreate.do");
+			return "/admin/main/coupon/alert";			
+		}else {
+			model.addAttribute("msg", "쿠폰 생성이 실패했습니다.");
 			return "/admin/main/coupon/couponcreate";
+		}
 	}
+	
 	
 	//쿠폰 발급내역
 	@GetMapping("/admin/main/coupon/couponhistory.do")
@@ -94,5 +103,12 @@ public class CouponController {
 		return "/admin/main/coupon/couponhistory";
 	}
 	
+	//쿠폰 발급취소
+	@PostMapping("/admin/main/coupon/couponcancel.do")
+	@ResponseBody
+	public int couponcancle(CouponVO vo) {
+		System.out.println(vo.getCoupon_no());
+		return service.couponcancel(vo);
+	}
 	
 }

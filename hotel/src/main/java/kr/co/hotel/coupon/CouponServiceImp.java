@@ -22,6 +22,7 @@ public class CouponServiceImp implements CouponService {
 		return mapper.list(map);
 	}
 
+	
 	//특정 게스트 정보 출력
 	@Override
 	public GuestVO selectGuestNo(String guest_id) {
@@ -95,7 +96,7 @@ public class CouponServiceImp implements CouponService {
 	//쿠폰 페이징
 	@Override
 	public Map couponpaging(CouponVO vo) {
-		int totalCount = mapper.counthistory();//총개시물 수
+		int totalCount = mapper.counthistory(vo);//총개시물 수
 		//총 페이지 수
 		int totalPage = totalCount / vo.getPageRow();
 		if(totalCount % vo.getPageRow() > 0) totalPage++;
@@ -123,6 +124,11 @@ public class CouponServiceImp implements CouponService {
 		map.put("prev", prev);
 		map.put("next", next);
 		return map;
+	}
+
+	@Override
+	public int couponcancel(CouponVO vo) {
+		return mapper.couponcancel(vo);
 	}
 	
 

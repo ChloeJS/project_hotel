@@ -28,6 +28,8 @@ public class CouponVO {
 	
 	
 	
+	private String stype;
+	private String sword;
 	
 	
 	 public CouponVO() { 
