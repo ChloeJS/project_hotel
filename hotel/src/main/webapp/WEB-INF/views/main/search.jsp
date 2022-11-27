@@ -16,6 +16,7 @@
     />
     <link href="/hotel/css/hotel/serachView.css" rel="stylesheet" type="text/css">
     <!-- Demo styles -->
+
     <script type="text/javascript">
     	function goSubmit() {
     		if($("#searchWord").val()=='' && $("#selectbox_state").val()=='0'){
@@ -54,20 +55,26 @@
 		</div>
 	</form><br>
 	</div>
-	<c:if test="${hotelVO.searchWord !=''}">
-	<span id="input_searchWord">입력한 검색어: ${hotelVO.searchWord}</span>
-	</c:if>
-	<c:if test="${hotelList.size() > 1}">
-	<div class="selectbox_sort">
-		<select name="sortType" id="sortType" onchange="sortList()">
-			<option value="" selected>---</option>
-			<option value="scoreList">평점순</option>
-			<option value="lowPrice">낮은 가격순</option>
-			<option value="review">리뷰순</option>
-			<option value="favorite">좋아요순</option>
-		</select>
+	
+	<div id="input_searchWord" style="background-color:#FBEFEF; padding-left:24%;">
+		<c:if test="${hotelVO.searchWord !=''}">
+			<span id="input_searchWord" >입력한 검색어: ${hotelVO.searchWord}</span>
+		</c:if>
+		<c:if test="${hotelList.size() > 1}">
+			<span class="selectbox_sort" style="padding-right:24%;" >
+				<select name="sortType" id="sortType" onchange="sortList()">
+					<option value="" selected>---</option>
+					<option value="scoreList">평점순</option>
+					<option value="lowPrice">낮은 가격순</option>
+					<option value="review">리뷰순</option>
+					<option value="favorite">좋아요순</option>
+				</select>
+			</span>
+		</c:if>
 	</div>
-	</c:if>
+
+	
+	
 	<div id="background">
 	<div id="searchArea" class="container list_body" style="width: 1000px;">
 		<div class="low">

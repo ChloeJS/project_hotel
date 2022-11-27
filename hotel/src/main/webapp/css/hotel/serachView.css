@@ -73,6 +73,7 @@ body {
 
 .search_box {
 	text-align: center;
+	background-color: #F8E0E0;
 }
 
 #searchWord {
@@ -145,7 +146,7 @@ span {
 	 font-weight: bold;
 }
 #background{
-	background-image:url("/hotel/upload/pinkSky.jpg");
+	background-color:#FBEFEF;;
 	background-size:cover;
 }
 .container_list {
