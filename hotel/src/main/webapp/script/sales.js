@@ -52,7 +52,7 @@
 					 month + '월' + (date-3)+"일 : "+$("#sale4").val()+"￦",
 					 month + '월' + (date-2)+"일 : "+$("#sale5").val()+"￦",
 					 month + '월' + (date-1)+"일 : "+$("#sale6").val()+"￦",
-					 month + '월' + (date)+"일 : "+$("#sale6").val()+"￦",
+					 month + '월' + (date)+"일 : "+$("#sale7").val()+"￦",
 	      			],
 	      			
 	      datasets: [

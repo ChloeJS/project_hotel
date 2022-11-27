@@ -47,6 +47,7 @@
 										<canvas id="bar-chart-daily" width="800" height="450"></canvas>
 										<c:forEach var="sale" items="${map.ary}" varStatus="idx">
 											<input type="hidden" id="sale${idx.count}" value="${sale}">
+											
 										</c:forEach>
 									</div>
 								
