@@ -35,7 +35,7 @@
 <%@ include file="/WEB-INF/views/admin/include/top.jsp" %>
 
 
-<div class="container">
+<div class="container" style="text-align: center;">
 	<div id="infoTable" style="display: inline;">
 		<table id="hotelInfo" border="2px solid #black;">
 			<th>호텔명 : ${view.hotel.hotel_name}</th>
