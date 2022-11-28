@@ -60,7 +60,9 @@
 
 	<!-- 관리자 검색조건 22.08.30 -->
 	<select id="adminList" parameterType="kr.co.hotel.guestboard.GuestBoardVO" resultType="kr.co.hotel.guestboard.GuestBoardVO">
-		SELECT * FROM guestboard
+		 SELECT * , 
+		 	datediff ( now(), gboard_regdate ) AS diff 
+		 FROM guestboard
 		<where>
 		<if test="sword != null and sword != ''">
 			<if test="stype != 'all'">

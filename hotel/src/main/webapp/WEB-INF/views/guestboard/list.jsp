@@ -57,7 +57,7 @@
 						<span><strong>총 ${data.totalCount}개</strong> | ${guestBoardVO.page}/${data.totalPage}페이지</span> 
 					</p>
 					
-					<caption>게시판 목록</caption>
+					<caption>게시판 목록 </caption>
 					<colgroup>
 						<col width="80px" />
 						<col width="130px" />
@@ -107,7 +107,9 @@
 										</c:if>
 										<td class="txt_l">
 										<a href="/hotel/guestboard/view.do?gboard_no=${vo.gboard_no}&guest_no=${vo.guest_no}&name2=${loginInfo.guest_name }&stype=${param.stype}&sword=${param.sword}">${vo.gboard_title}
+										
 										<c:if test="${vo.diff <= 3 }">
+										
 										<img src="/hotel/image/boardPic/new (1).png" width="30px">
 										</c:if>
 										</a></td>								
