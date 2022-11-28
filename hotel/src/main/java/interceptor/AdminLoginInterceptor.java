@@ -24,7 +24,7 @@ public class AdminLoginInterceptor implements HandlerInterceptor {
 			res.setContentType("text/html;charset=utf-8");
 			PrintWriter out = res.getWriter();
 			out.println("<script>");
-			out.println("alert('로그인후 사용가능합니다.(인터셉터)');");
+			out.println("alert('로그인후 사용가능합니다.;");
 			out.println("location.href='/hotel/admin/login.do';");
 			out.println("</script>");
 			out.flush();

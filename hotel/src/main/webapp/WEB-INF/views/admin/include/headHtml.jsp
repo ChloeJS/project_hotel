@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=utf-8" %>
-<title>둘이놀까</title>
+<title>둘이놀자</title>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <link href="<%=request.getContextPath()%>/css/basic.css" rel="stylesheet" type="text/css" />
 <link href="<%=request.getContextPath()%>/css/layout.css" rel="stylesheet" type="text/css" />

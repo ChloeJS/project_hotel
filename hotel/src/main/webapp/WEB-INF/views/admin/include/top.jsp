@@ -57,7 +57,7 @@ $(function(){
 </script>
 <div id="header">
 	<div class="header_inner">
-		<h1>둘이놀까</h1>
+		<h1>둘이놀자</h1>
 		<p class="login_name">${loginInfo_admin.admin_id }</p>
 		<!-- util : s -->
 		<div class="util">

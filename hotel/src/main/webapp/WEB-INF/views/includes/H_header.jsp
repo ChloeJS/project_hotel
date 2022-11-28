@@ -18,7 +18,7 @@
 <body>
     <nav class="navbar bg-light fixed-top" style="background-color: pink!important">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/hotel/host/mypage.do">둘이놀까</a>
+          <a class="navbar-brand" href="/hotel/host/mypage.do"><b>둘이놀자</b></a>
           <c:if test="${!empty loginInfo2}">
           <div style="width:60%">
           	<div style="text-align:right;width:115%;">

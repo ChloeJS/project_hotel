@@ -63,7 +63,7 @@ public class openBankingAPI {
 			conn.setRequestProperty("Transfer-Encoding", "chunked");
 			conn.setRequestProperty("Connection", "keep-alive\"");
 			// token 값 header에 넣어주기
-			conn.setRequestProperty("Authorization", "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJNMjAyMjAxNTYwIiwic2NvcGUiOlsib29iIl0sImlzcyI6Imh0dHBzOi8vd3d3Lm9wZW5iYW5raW5nLm9yLmtyIiwiZXhwIjoxNjY5NTE0NzI3LCJqdGkiOiIyZTI3MjJkNi00ZjhkLTQ0NmYtYTIzNC01MGIxNTg2ZDg1ZjMifQ.wzvW6wbjDRQ4kPZHq56VWcdF80MLATH2KqluBH_T5Go");
+			conn.setRequestProperty("Authorization", "BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJNMjAyMjAxNTYwIiwic2NvcGUiOlsib29iIl0sImlzcyI6Imh0dHBzOi8vd3d3Lm9wZW5iYW5raW5nLm9yLmtyIiwiZXhwIjoxNjc3Mzk4MzkyLCJqdGkiOiI5MGRiYzNlMS1lZDNkLTQ3MjQtOTJiZi1lMmRjN2QyNGIxNWQifQ.pMI9ErxbgIB77AoUH-nh-DYefYBsZOLRV417ijb8vN4");
             // POST 방식 사용을 위해
 			conn.setDoOutput(true);
 

@@ -343,7 +343,7 @@
                         </tr>
                         <tr>
                             <td>
-                            	<input type="text" name="guest_addr2" id="geust_addr2" style="width:80%">
+                            	<input type="text" name="guest_addr2" id="guest_addr2" style="width:80%">
                             </td>
                         </tr>
                         <tr>
